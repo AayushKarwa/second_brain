@@ -12,7 +12,7 @@ interface cardInterface{
 const Card = ({title,link,type}:cardInterface) => {
   return (
     <div>
-        <div className='p-5 w-max-96 rounded-lg text-black shadow-md border border-slate-100 justify-center'
+        <div className='p-5 w-max-96 rounded-lg text-black shadow-md border border-slate-100 justify-center bg-gradient-to-r from-purple-200 to-purple-100'
         >
             <div className='flex justify-between items-center max-w-72'
             >

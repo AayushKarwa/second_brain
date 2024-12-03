@@ -4,9 +4,10 @@ interface buttonInterface {
     variant: 'primary'|'secondary',
     text:string,
     startIcon:ReactElement;
+    onClick?:void;
 }
 
-export const Button = ({variant,text,startIcon}:buttonInterface) => {
+export const Button = ({variant,text,startIcon,onClick}:buttonInterface) => {
   // Define base classes
   const baseClasses = `inline-flex h-12 animate-shimmer items-center justify-center rounded-md border px-6 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2`;
   
@@ -18,7 +19,7 @@ export const Button = ({variant,text,startIcon}:buttonInterface) => {
 
   return (
     <div>
-      <button className={`${baseClasses} ${variants[variant]} gap-2`}>
+      <button onClick={onClick} className={`${baseClasses} ${variants[variant]} gap-2`}>
         {startIcon}
         {text}
       </button>
