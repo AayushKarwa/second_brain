@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { ShareIcon } from './Icons/ShareIcon'
 import { PlusIcon } from './Icons/PlusIcon'
 import { DeleteIcon } from './Icons/DeleteIcon'

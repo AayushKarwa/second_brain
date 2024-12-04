@@ -1,11 +1,12 @@
-import React, { ReactElement } from 'react';
+
 
 interface buttonInterface {
     variant: 'primary'|'secondary',
     text:string,
     startIcon:ReactElement;
     onClick?:void;
-    widthFull?:boolean
+    widthFull?:boolean;
+   
 }
 
 export const Button = ({variant,text,startIcon,onClick,widthFull}:buttonInterface) => {
